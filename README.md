@@ -80,11 +80,13 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
   - **Rate limiting**
   - **Firewall rules** to block IPs
 
-###  injection attack
+###  Data Spoofing
 
-- Simulated with tools like Wireshark to know the packet contents and then send incorrect values (data) with same formate of the correct packet.
+- Simulated with tools like Wireshark to know the packet contents and format then send incorrect values (data) with same formate of the correct packet.
 - Mitigation:
   - Flask rejects altered data with invalid hash
   - HMAC ensures integrity and authenticity
+
  
+<img width="1015" height="476" alt="Sytem architecture " src="https://github.com/user-attachments/assets/b8fa3612-26a2-4304-a4df-8ff261f7b712" />
 
