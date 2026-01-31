@@ -87,5 +87,4 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
   - Flask rejects altered data with invalid hash
   - HMAC ensures integrity and authenticity
  
-- <img width="980" height="493" alt="Sytem architecture" src="https://github.com/user-attachments/assets/7254369b-11ca-4c9c-b769-da2fc1719971" />
 
