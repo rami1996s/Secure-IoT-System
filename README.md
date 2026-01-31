@@ -22,8 +22,6 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
 
 | Threat                 | Mitigation                         |
 |------------------------|-------------------------------------|
-| Data Tampering         | HMAC-SHA256 (using a shared secret) |
-| Message Forgery        | Secret-based hash validation        |
 | Denial of Service (DoS)| iptables/UFW firewall rules         |
 | Packet Sniffing        | Hash prevents modification validity |
 
@@ -82,9 +80,9 @@ This project demonstrates a secure IoT system for real-time sensor data monitori
   - **Rate limiting**
   - **Firewall rules** to block IPs
 
-###  Data Tampering
+###  injection attack
 
-- Simulated with tools like Wireshark or a fake client
+- Simulated with tools like Wireshark to know the packet contents and then send incorrect values (data) with same formate of the correct packet.
 - Mitigation:
   - Flask rejects altered data with invalid hash
   - HMAC ensures integrity and authenticity
